@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Automotive Cybersecurity: Attacks</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Automotive Cybersecurity, the truth about safety features">
+    <meta name="keywords" content="car security, replay attack, rolljam attack, car computer
+          car attack, car hack, car control">
+    <link rel="stylesheet" href="car.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Automotive Cybersecurity</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="evolution.html">Evolution</a></li>
+                <li><a href="bts.html">Behind the Scenes</a></li>
+                <li><a href="attacks.html">Types of Attacks</a></li>
+                <li><a href="research.html">Research Implemented Exploits</a></li>
+                <li><a href="worth.html">Worth It?</a></li>
+                <li><a href="future.html">Future</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Types of Attacks</h1>
+            <h2>Replay Attack</h2>
+            <p>
+                This attack allows hackers to gain access to controlling the locks on a car.
+                When the unlocked button on a key fob is pressed, a modulated radio signal
+                is sent to the car. If the signal matches the car, the doors of the car are
+                unlocked. To get around this, hackers record the signal and play it
+                back to control the locks.
+
+                To fix this, key fobs began using a rolling code system.<br><br><br>
+                Security evolved, meaning hacker exploits would also have to evolve to keep up.
+            </p><br>
+            <h2>Kamkar&rsquo;s Rolljam Attack</h2>
+            <p>
+                To improve security, a rolling code system uses an algorithm to generate a new
+                code every time the unlock button is pressed. The car unlocks because it
+                knows the same algorithm. Once a new code is generated, the old code is overriden.
+                This was implemented to prevent replay attacks.<br><br><br>
+                Kamkar&rsquo;s rolljam attack is implemented by recording and blocking the original radio
+                signal sent from the key fob. Blocking the signal means that the car will not unlock.
+                Most likely, the unlock button will be pressed again. The second time the unlock button
+                is pressed, the hacker will also record and block the signal. The hacker will then
+                replay the original recorded signal so that the car will unlock. This attack is so discreet
+                that the car owner will likely not realize they are being targeted. The hacker can now
+                replay the second recorded code to unlock the car.<br><br><br>
+                This hack may seem complicated and unlikely to happen, but if someone really wanted
+                access to your car, this device costs
+                <a href="https://www.wired.com/2015/08/hackers-tiny-device-unlocks-cars-opens-garages/">$32</a>.
+            </p><br>
+            <h2>On-Board Diagnostics (OBD-II) Dongle Attack</h2>
+            <p>
+                Car repair shops use On-Board Diagnostics (OBD-II) dongles to check for problems with cars.
+                These dongles plug into a port in the car, making it possible to communicate with the
+                car&rsquo;s computer. This is how repair shops diagnose cars.<br><br><br>
+                These dongles also have their own vulnerabilities. One is that it is
+                possible for hackers to power down a car engine remotely. This attack is possible as long as
+                the car is within Bluetooth range. Bluetooth range has been increasing as
+                techology has continued to evolve.<br><br><br>
+                To help combat the vulnerabilities, a two-step verification has been implemented.
+                Hackers found their way past the rolling code system, so it is only a matter of time
+                before hackers find a way around two-step verification.
+            </p>
+            <div class="clear">
+
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2022 Automotive Cybersecurity
+            <br>
+            <a href="mailto:pr04494@georgiasouthern.edu">Patricia Reisman</a>
+        </footer>
+    </div>
+</body>
+</html>
